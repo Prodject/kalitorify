@@ -46,3 +46,103 @@ Added instructions for disable/enable IPv6
 Changes on 'check_ip()' and 'restart()' functions
 Changed order of functions: 'check_ip()' and 'check_status()' before 'main()'
 Improved README
+
+
+/** 1.16.0 / 1 May 2019 **/
+
+Modified program logic:
+Changed the name of old 'main()' function, now is called 'start()'
+Integrated the code to start the program in a new 'main()' function
+
+
+/** 1.17.0 / 11 Jun 2019 **/
+
+Bold colors for terminal output messages
+Changed banner
+Update function 'check_ip()'
+Update README
+Added issue template
+
+
+/** 1.17.0-1 / 20 Jun 2019 **/
+
+Update README
+
+
+/** 1.17.1 / 30 Jun 2019 **/
+
+Fix little error on code syntax on function 'check_defaults'
+
+
+/** 1.18.0 / 12 Aug 2019 **/
+
+Delete readonly variable: 'bug_report_url'
+Changes on functions 'start(), stop()': delete excessive output
+Update README: new project logo
+
+
+/** 1.18.1 / 12 Aug 2019 **/
+
+Update README
+
+
+/** 1.19.0 / 16 Sep 2019 **/
+
+Change default directory 'backup_dir'
+Add function 'die()' for exception handling (exit on error)
+Improve function 'check_ip()'
+Changes on function 'check_status()'
+Change Makefile
+
+
+/** 1.19.1 / 26 Sep 2019 **/
+
+Fix the check of service status in ufw functions (issue #28) see commits
+Fix bug with resolvconf (symlink /etc/resolv.conf)
+
+
+/** 1.19.2 / 10 Oct 2019 **/
+
+Changes on "printf()" functions (also help_menu())
+small improvements (NO BUGFIX)
+Update README: improve section "Security"
+
+
+/** 1.20.0 / 08 Nov 2019 **/
+
+Moved the iptables instructions to a separate function "setup_iptables()"
+Remove functions for manage 'ufw' (debloat)
+
+
+/** 1.20.1 / 27 Dec 2019 **/
+
+Fix parsing of command line arguments on 'main()' function: see 'ISSUE #33'
+Change function name: 'check_defaults()' -> 'check_settings()'
+Added instruction for reload systemd daemons on function 'check_settings()'
+Cleanup function 'usage()'
+Added 'banner()' to function 'stop()'
+
+
+/** 1.20.2 / 05 Jan 2020 **/
+
+Add new IP check API (see PULL REQUEST #36)
+
+
+/** 1.21.0 / 06 Jan 2020 **/
+
+`setup_iptables()` function:
+    - Add arguments for tor and default rules
+    - Improve iptables flush
+    - Move up in the code (see commit)
+
+Changes on `usage()` function
+
+
+/** 1.21.1 / 07 Jan 2020 **/
+
+Little fixes (setup_iptables(), start() functions)
+
+
+/** 1.22.0 / 11 Jan 2020 **/
+
+Improve iptables rules (see PULL REQUEST #37)
